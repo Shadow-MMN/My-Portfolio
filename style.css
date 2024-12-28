@@ -20,6 +20,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    font-size: 0.5rem;
 }
 header h1,
 .header-icon{
@@ -39,6 +40,9 @@ header div{
 nav ul{
     display: flex;
     list-style-type: none;
+}
+nav li{
+    font-size: 0.5rem;
 }
 nav ul,
 nav li{
@@ -166,6 +170,11 @@ nav a{
     text-align: center;
     color: black;
 }
+.blog4,
+.blog5,
+.blog6{
+    display: none;
+}
 .blog1,
 .blog2,
 .blog3,
@@ -266,21 +275,17 @@ footer h3{
     width: 93%;
     margin: 0 auto;
 }
-@media (max-width: 576px) {
+@media (min-width: 577px) {
     header{
-        font-size: 0.5rem;
+        font-size: 1.3rem;
+    }
+    .header-icon{
+        width: 50px;
+        height: 50px;
     }
     nav li{
-        font-size: 0.65rem;
+        font-size: 1.125rem;
     }
-    .blog4,
-    .blog5,
-    .blog6{
-        display: none;
-    }
-    
-}
-@media (min-width: 577px) {
     .hero {
         position: relative; /* Makes the .hero the positioning context */
         height: 293px;
@@ -330,6 +335,11 @@ footer h3{
     }
     .blog-more{
          display: none;
+    }
+    .blog4,
+    .blog5,
+    .blog6{
+        display: block;
     }
     .more-info{
         display: grid;
