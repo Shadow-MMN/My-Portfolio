@@ -3,8 +3,18 @@ html {
   }  
 body{
     margin: 0;
-    color: black;
+    background-color: #202020;
+    color: white;
+    font-family: "Merriweather", serif;
+    text-underline-position: from-font;
+    font-weight: 400;
 }
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -20,7 +30,7 @@ header div{
     display: flex;
     align-items: center;
     margin-left: 1.25em;
-}
+} 
 .header-icon{
     width: 34.25px;
     height: 34.25px;  
@@ -36,11 +46,11 @@ nav li{
 }
 nav a{
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
 }
 .hero{
    width: 100%;
-   color: rgb(0, 0, 0);
+   color: whitesmoke;
 } 
 .hero-image{
     height: 293px;
@@ -53,43 +63,46 @@ nav a{
     top: 6em;
 }
 .hero-article h3,
+.hero-article h2,
+.more-info-header h3,
+.more-info-header h2{
+    margin-left: 0.5em;
+}
+.hero-article p,
+.more-info-header-p{
+    margin-left: 1em;
+}
+.hero-article h3,
 .home h3,
 .more-info h3,
 .about-me h3{
-    font-family: Source Sans Pro;
     font-size: 0.75rem;
-    font-weight: 400;
     line-height: 15.08px;
     text-align: left;
-    text-underline-position: from-font;
 }
 .hero-article h2,
 .home h2,
 .more-info h2,
 .about-me h2{
-    font-family: Source Sans Pro;
     font-size: 2rem;
     font-weight: 700;
     line-height: 34.62px;
     letter-spacing: -0.03em;
     text-align: left;
-    text-underline-position: from-font;
 }
 .hero-article p,
 .home p,
 .more-info p,
 .about-me p{
-    font-family: Source Sans Pro;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 20.11px;
     text-align: left;
-    text-underline-position: from-font;
 }
 .home section,
 .more-info section,
 .about-me section{
-    box-shadow: 0 0 0.4px black;
+    box-shadow: 0 0 0.4px whitesmoke;
+    border-radius: 0.5em;
 }
 .home img,
 .more-info img,
@@ -166,29 +179,24 @@ nav a{
 footer{
     width: 100%;
     height: 105px;
-    background-color: #202020;
+    background-color: white;
     margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #202020;
 }
 footer h2{
-    font-family: Source Sans Pro;
     font-size: 0.75rem;
     font-weight: 700;
     line-height: 12.98px;
     letter-spacing: -0.03em;
     text-align: center;
-    text-underline-position: from-font;
 }
 footer h3{
-    font-family: Source Sans Pro;
     font-size: 0.75rem;
-    font-weight: 400;
     line-height: 15px;
     text-align: center;
-    text-underline-position: from-font;
 }
 .more-info{
     display: grid;
@@ -236,12 +244,10 @@ footer h3{
 }
 .more-info-article h4,
 .about-me-article h4{
-    font-family: Source Sans Pro;
     font-size: 1em;
     font-weight: 700;
     line-height: 20.11px;
     text-align: left;
-    text-underline-position: from-font;
 }
 .more-info-article span,
 .about-me-article span{
@@ -250,12 +256,11 @@ footer h3{
 }
 .more-info h5,
 .about-me h5{
-    font-family: Source Sans Pro;
+  
     font-size: 1em;
     font-weight: 700;
     line-height: 20.11px;
     text-align: center;
-    text-underline-position: from-font;
 }
 .about-me{
     width: 93%;
@@ -385,10 +390,5 @@ footer h3{
     .about-me-header{
         width: 65%;
     }
-}
-a{
-    text-decoration: none;
-    cursor: pointer;
-    color: #202020;
 }
 
